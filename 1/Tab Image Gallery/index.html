@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tab Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<div class="images">
+  <img onclick="changeimg(this)" src="1.jpg" alt="">
+  <img onclick="changeimg(this)" src="2.jpg" alt="">
+  <img onclick="changeimg(this)" src="3.jpg" alt="">
+  <img onclick="changeimg(this)" src="4.jpg" alt="">
+</div>
+
+<div class="pre">
+  <a onclick="this.parentElement.style.display='none'" class="ion-close"></a>
+  <img id="p" src="1.jpg" alt="">
+</div>
+
+<script type="text/javascript">
+function changeimg(image) {
+  var p = document.getElementById("p");
+  p.src = image.src;
+  p.parentElement.style.display ="block";
+}
+
+
+
+</script>
+
+  </body>
+</html>

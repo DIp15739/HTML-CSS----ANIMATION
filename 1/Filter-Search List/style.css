@@ -1,0 +1,56 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
+.searchbox{
+  width: 90%;
+  margin: 10px auto;
+}
+.header{
+  background: #34495e;
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+}
+.header h1{
+  text-transform: uppercase;
+  color: white;
+  margin: 0;
+  margin-bottom: 8px;
+}
+#value{
+  border: none;
+  background: #2c3e50;
+  padding: 6px;
+  font-size: 18px;
+  width: 80%;
+  border-radius: 6px;
+  color: white;
+}
+
+.container{
+  background: #f1f1f1;
+}
+.profile{
+  margin: 6px 0;
+  display: flex;
+  align-items: center;
+}
+
+.icon{
+  width: 40px;
+  height: 40px;
+  background: #2c3e50;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.name{
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}

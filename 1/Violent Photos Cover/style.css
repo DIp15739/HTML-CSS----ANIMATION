@@ -1,0 +1,42 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.image{
+  width: 450px;
+  height: 600px;
+  overflow: hidden;
+}
+.image img{
+  width: 100%;
+  height: 100%;
+  filter: blur(24px);
+}
+.text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  text-shadow: 0 0 10px black;
+}
+.btn{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0,0,0,.3);
+  color: white;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 6px;
+  cursor: pointer;
+}

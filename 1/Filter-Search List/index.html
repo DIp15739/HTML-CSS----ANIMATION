@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+<div class="searchbox">
+  <div class="header">
+    <h1>Contacts</h1>
+    <input onkeyup="filter()" type="text" id="value" placeholder="Type to Search">
+  </div>
+
+  <div class="container">
+    <div class="profile">
+      <span class="icon">A</span>
+      <span class="name">Archie Hansen</span>
+    </div>
+
+    <div class="profile">
+      <span class="icon">C</span>
+      <span class="name">Celia Wood</span>
+    </div>
+
+    <div class="profile">
+      <span class="icon">D</span>
+      <span class="name">Danilelle Spencer</span>
+    </div>
+
+    <div class="profile">
+      <span class="icon">M</span>
+      <span class="name">Margarita Austin</span>
+    </div>
+
+    <div class="profile">
+      <span class="icon">S</span>
+      <span class="name">Simon Daniels</span>
+    </div>
+
+    <div class="profile">
+      <span class="icon">G</span>
+      <span class="name">Glenn Stevenson</span>
+    </div>
+    <div class="profile">
+      <span class="icon">C</span>
+      <span class="name">Collen black</span>
+    </div>
+    <div class="profile">
+      <span class="icon">M</span>
+      <span class="name">Miriam Johnston</span>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  function filter() {
+
+    var value,name,profile,i;
+
+    value = document.getElementById("value").value.toUpperCase();
+    profile = document.getElementsByClassName("profile");
+
+    for(i=0;i<profile.length;i++){
+      name = profile[i].getElementsByClassName("name");
+      if (name[0].innerHTML.toUpperCase().indexOf(value) > -1) {
+        profile[i].style.display = "flex";
+      }else{
+        profile[i].style.display = "none";
+      }
+    }
+
+  }
+</script>
+
+
+  </body>
+</html>

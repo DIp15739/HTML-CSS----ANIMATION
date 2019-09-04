@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+  </head>
+  <body>
+
+    <div class="business-card middle">
+      <div class="front">
+        <h2>Shuichi Akai</h2>
+        <span>Web Designer</span>
+        <ul class="contact-info">
+          <li>
+            <i class="fas fa-mobile-alt"></i> +0000000000
+          </li>
+          <li>
+            <i class="far fa-envelope"></i> akaishu@email.com
+          </li>
+          <li>
+            <i class="fas fa-map-marker-alt"></i> Tokyo, Japan
+          </li>
+        </ul>
+      </div>
+      <div class="back">
+        <span>DarkCode</span>
+      </div>
+    </div>
+
+    <script>
+      $(".business-card").click(function(){
+        $(".business-card").toggleClass("business-card-active");
+      });
+    </script>
+  </body>
+</html>

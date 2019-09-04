@@ -1,0 +1,16 @@
+
+body{
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+#text{
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 300px;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-weight: 700;
+}

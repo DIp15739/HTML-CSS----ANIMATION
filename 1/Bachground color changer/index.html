@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<div class="box">
+  <a onclick="changecolor('red')" id="red">#e74c3c</a>
+  <a onclick="changecolor('blue')" id="blue">#3498db</a>
+  <a onclick="changecolor('green')" id="green">#2ecc71</a>
+  <a onclick="changecolor('gray')" id="gray">#34495e</a>
+  <a onclick="changecolor('yellow')" id="yellow">#f1c40f</a>
+  <a onclick="changecolor('orange')" id="orange">#e67e22</a>
+</div>
+
+<script type="text/javascript">
+  function changecolor(id) {
+    document.body.style.background = document.getElementById(id).innerHTML;
+  }
+</script>
+  </body>
+</html>
